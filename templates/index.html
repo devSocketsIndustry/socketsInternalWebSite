@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sockets Industry Comments</title>
+</head>
+<body>
+<h1>Push a comments for sales</h1>
+
+{% if commentaire %}
+<p>Your comment : {{ commentaire }}</p>
+{% endif %}
+
+<form action="/" method="post">
+    <label for="commentaire">Commentaire :</label><br>
+    <textarea id="commentaire" name="commentaire" rows="4" cols="50"></textarea><br>
+    <input type="submit" value="Soumettre">
+</form>
+</body>
+</html>

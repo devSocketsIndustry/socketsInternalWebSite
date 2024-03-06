@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Connexion</title>
+</head>
+<body>
+<h1>Connexion</h1>
+
+{% if erreur %}
+<p style="color: red;">{{ erreur }}</p>
+{% endif %}
+
+<form action="/login" method="post">
+  <label for="nom_utilisateur">Nom d'utilisateur :</label><br>
+  <input type="text" id="nom_utilisateur" name="nom_utilisateur"><br>
+  <label for="mot_de_passe">Mot de passe :</label><br>
+  <input type="password" id="mot_de_passe" name="mot_de_passe"><br><br>
+  <input type="submit" value="Se connecter">
+</form>
+</body>
+</html>
